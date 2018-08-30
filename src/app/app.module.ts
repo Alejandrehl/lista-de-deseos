@@ -1,3 +1,4 @@
+import { DeseosService } from './../services/deseos.service';
 import { TerminadosPage } from './../pages/terminados/terminados.component';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -31,6 +32,7 @@ import { PendientesPage } from '../pages/pendientes/pendientes.component';
   providers: [
     StatusBar,
     SplashScreen,
+    DeseosService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
